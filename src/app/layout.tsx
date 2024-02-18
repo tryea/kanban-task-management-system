@@ -2,7 +2,9 @@ import React from "react";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans as PlusJakartaSans } from "next/font/google";
 import "@/styles/globals.css";
-import { ThemeProvider } from "../components/theme-provider";
+import { ThemeProvider } from "@/providers/theme-provider";
+import Sidebar from "@/components/organisms/Sidebar";
+import HeaderNav from "@/components/organisms/HeaderNav";
 
 const plusJakartaSans = PlusJakartaSans({
   weight: ["700", "500"], // Specify the needed font weights
@@ -28,7 +30,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="flex min-w-dvw flex-row">
+            <Sidebar />
+            <div>
+              <HeaderNav />
+              <main>{children}</main>
+            </div>
+          </div>
         </ThemeProvider>
       </body>
     </html>
