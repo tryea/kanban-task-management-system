@@ -27,6 +27,9 @@ const config = {
           softRed: "#FF9898",
         },
       },
+      fontFamily: {
+        sans: ['"Plus Jakarta Sans"', "sans-serif"],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
