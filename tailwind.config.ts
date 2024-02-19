@@ -58,6 +58,7 @@ const config = {
         "38": "9.5rem",
         "69": "17.25rem",
         "75": "18.75rem",
+        dvw: "100dvw",
       },
       minHeight: {
         "38": "9.5rem",

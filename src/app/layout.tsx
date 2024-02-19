@@ -4,9 +4,9 @@ import { Plus_Jakarta_Sans as PlusJakartaSans } from "next/font/google";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import Sidebar from "@/components/organisms/Sidebar";
-import HeaderNav from "@/components/organisms/HeaderNav";
 import SidebarProvider from "@/providers/sidebar-provider";
 import SidebarSwitch from "@/components/molecules/SidebarSwitch";
+import MainWrapper from "@/components/organisms/MainWrapper";
 
 const plusJakartaSans = PlusJakartaSans({
   weight: ["700", "500"], // Specify the needed font weights
@@ -33,12 +33,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <SidebarProvider>
-            <div className="flex min-w-dvw flex-row">
+            <div className="flex min-w-dvw max-w-dvw flex-row">
               <Sidebar />
-              <div>
-                <HeaderNav />
-                <main>{children}</main>
-              </div>
+              <MainWrapper>{children}</MainWrapper>
             </div>
             <SidebarSwitch />
           </SidebarProvider>
