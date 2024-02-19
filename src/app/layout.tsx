@@ -5,6 +5,8 @@ import "@/styles/globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import Sidebar from "@/components/organisms/Sidebar";
 import HeaderNav from "@/components/organisms/HeaderNav";
+import SidebarProvider from "@/providers/sidebar-provider";
+import SidebarSwitch from "@/components/molecules/SidebarSwitch";
 
 const plusJakartaSans = PlusJakartaSans({
   weight: ["700", "500"], // Specify the needed font weights
@@ -30,13 +32,16 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex min-w-dvw flex-row">
-            <Sidebar />
-            <div>
-              <HeaderNav />
-              <main>{children}</main>
+          <SidebarProvider>
+            <div className="flex min-w-dvw flex-row">
+              <Sidebar />
+              <div>
+                <HeaderNav />
+                <main>{children}</main>
+              </div>
             </div>
-          </div>
+            <SidebarSwitch />
+          </SidebarProvider>
         </ThemeProvider>
       </body>
     </html>

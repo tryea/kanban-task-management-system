@@ -14,7 +14,7 @@ function BoardItem(props: Props) {
   if ("create" in props) {
     return (
       <div
-        className={`flex h-12 flex-row items-center gap-4 rounded-r-full pl-8`}
+        className={`flex h-12 cursor-pointer flex-row items-center gap-4 rounded-r-full pl-8`}
       >
         <div className="relative aspect-square w-4">
           <Image src={`/icons/board-purple.svg`} alt="board-icon" fill />
@@ -27,7 +27,7 @@ function BoardItem(props: Props) {
   }
   return (
     <div
-      className={`flex h-12 flex-row gap-4 rounded-r-full ${props.active ? "bg-kanban-purple" : ""} items-center pl-8`}
+      className={`flex h-12 cursor-pointer flex-row gap-4 rounded-r-full ${props.active ? "bg-kanban-purple" : ""} items-center pl-8`}
     >
       <div className="relative aspect-square w-4">
         {props.active ? (
@@ -37,7 +37,7 @@ function BoardItem(props: Props) {
         )}
       </div>
       <div
-        className={`heading-m ${props.active ? "text-kanban-white" : "text-kanban-mediumGray"}`}
+        className={`heading-m ${props.active ? "text-kanban-white" : "text-kanban-grayBlue"}`}
       >
         <p>{props.label}</p>
       </div>

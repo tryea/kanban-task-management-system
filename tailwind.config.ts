@@ -10,6 +10,9 @@ const config = {
     "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
+  variants: {
+    fill: ["hover", "focus"], // this line does the trick
+  },
   theme: {
     extend: {
       colors: {
@@ -37,17 +40,23 @@ const config = {
         base: "1rem",
         sm: "0.75rem",
       },
+      padding: {
+        "22": "5.5rem",
+      },
       width: {
         "38": "9.5rem",
+        "69": "17.25rem",
         "75": "18.75rem",
       },
       minWidth: {
         "38": "9.5rem",
+        "69": "17.25rem",
         "75": "18.75rem",
         dvw: "100dvw",
       },
       maxWidth: {
         "38": "9.5rem",
+        "69": "17.25rem",
         "75": "18.75rem",
       },
       minHeight: {
@@ -56,10 +65,12 @@ const config = {
       },
       maxHeight: {
         "38": "9.5rem",
+        "69": "17.25rem",
         "75": "18.75rem",
       },
       height: {
         "38": "9.5rem",
+        "69": "17.25rem",
         "75": "18.75rem",
       },
     },
