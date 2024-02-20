@@ -82,12 +82,12 @@ const config = {
       addUtilities({
         ".heading-xl": {
           fontWeight: theme("fontWeight.bold"),
-          fontSize: theme("fontSize.l"),
+          fontSize: theme("fontSize.xl"),
           lineHeight: "1.25",
         },
         ".heading-l": {
           fontWeight: theme("fontWeight.bold"),
-          fontSize: theme("fontSize.xl"),
+          fontSize: theme("fontSize.l"),
           lineHeight: "1.25",
         },
         ".heading-m": {
