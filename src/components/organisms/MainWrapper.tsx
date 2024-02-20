@@ -37,7 +37,9 @@ function MainWrapper({ children }: Props) {
       }}
     >
       <HeaderNav />
-      <main className="flex max-w-full flex-1">{children}</main>
+      <main className="flex max-w-full flex-1 bg-kanban-veryPaleBlue dark:bg-kanban-darkGray">
+        {children}
+      </main>
     </motion.div>
   );
 }
