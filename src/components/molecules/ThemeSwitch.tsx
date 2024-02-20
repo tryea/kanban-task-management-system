@@ -25,7 +25,7 @@ const ThemeSwitch = () => {
   return (
     <div className="flex w-full justify-center pl-6">
       <div
-        className={`relative flex h-12 w-64 cursor-pointer items-center justify-center gap-6 rounded-md p-1 ${theme === "dark" ? "bg-kanban-darkGray" : "bg-kanban-veryPaleBlue"}`}
+        className={`relative flex h-12 w-64 cursor-pointer items-center justify-center gap-6 rounded-md p-1 ${theme === "dark" ? "bg-kanban-charcoal" : "bg-kanban-veryPaleBlue"}`}
         onClick={toggleTheme}
         style={{ transition: "all 0.3s ease" }}
       >

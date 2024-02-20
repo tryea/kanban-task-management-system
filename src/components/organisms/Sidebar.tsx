@@ -26,7 +26,7 @@ function Sidebar(props: Props) {
 
   return (
     <motion.div
-      className="flex max-h-dvh min-h-dvh w-75 min-w-75 flex-col border-r border-kanban-paleBlue pb-22 pr-6 pt-8 dark:border-kanban-mediumGray dark:bg-kanban-darkGray"
+      className="flex max-h-dvh min-h-dvh w-75 min-w-75 flex-col border-r border-kanban-paleBlue pb-22 pr-6 pt-8 dark:border-kanban-mediumGray dark:bg-kanban-charcoal"
       variants={sidebarVariants}
       animate={isOpen ? "open" : "closed"}
       initial={false}

@@ -6,7 +6,7 @@ type Props = {};
 function HeaderNav(props: Props) {
   return (
     <div
-      className={`flex h-24 w-full flex-row items-center justify-between bg-kanban-white px-6 dark:bg-kanban-darkGray`}
+      className={`flex h-24 w-full flex-row items-center justify-between bg-kanban-white px-6 dark:bg-kanban-charcoal`}
     >
       <div className={`select-none heading-xl`}>
         <p>Platform Launch</p>
